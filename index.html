@@ -15,14 +15,23 @@
 </head>
 <body>
     <header class="header">
-
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header__logo">
+                
+                <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--toggle">
+                    <label for="toggle-menu">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8  header__logo">
                     <a href="#"><img src="images/logo.png" alt=""></a>
                 </div>
-                <!-- end header__logo -->
+                <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--search">
+                    <a href="#"><img src="images/search-icon.png" /></a>
+                </div>
+
                 <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
+                    <input type="checkbox" id="toggle-menu" />
                     <nav class="header__nav">
                         <ul>
                             <li><a href="#">Giới thiệu</a></li>

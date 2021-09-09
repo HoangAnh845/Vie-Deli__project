@@ -52,7 +52,12 @@
     -o-transform: translateY(5px);
 }
 /* end header__nav */
-
+#toggle-menu{
+    display: none;
+}
+.show-mobile{
+    display: none;
+}
 .col-lg-2 .header__hotline{
     margin-top: 18px;
     margin-left: -35px;
