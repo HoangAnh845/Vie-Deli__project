@@ -1,226 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vie__Deli</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--toggle">
-                    <label for="toggle-menu">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8  header__logo">
-                    <a href="#"><img src="images/logo.png" alt=""></a>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--search">
-                    <a href="#"><img src="images/search-icon.png" /></a>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vie__Deli</title>
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-                <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
-                    <input type="checkbox" id="toggle-menu" />
-                    <nav class="header__nav">
-                        <ul>
-                            <li><a href="http://127.0.0.1:5500/introduce.html">Giới thiệu</a></li>
-                            <li><a href="#">Sản phẩm</a></li>
-                            <li><a href="#">Điểm phục vụ</a></li>
-                            <li><a href="#">Khuyến mãi</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                            <li>
-                                <a href="#"><img src="images/search-icon.png" alt="" class="header--search-icon"></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--end header__nav-->
-                </div>
-                <div class="col-lg-2">
-                    <div class="header__hotline">
-                        <span>Hotline 24/7</span>
-                        <span>090.154.8866</span>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--toggle">
+                        <label for="toggle-menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="col-lg-2 col-xs-8 col-sm-8 col-md-8 header__logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 show-mobile header--search">
+                        <a href="#"><img src="images/search-icon.png" /></a>
+                    </div>
+
+                    <div class="col-lg-8 col-xs-12 col-sm-12 col-md-12">
+                        <input type="checkbox" id="toggle-menu" />
+                        <nav class="header__nav">
+                            <ul>
+                                <li><a href="introduce.html">Giới thiệu</a></li>
+                                <li><a href="product-details.html">Sản phẩm</a></li>
+                                <li><a href="#">Điểm phục vụ</a></li>
+                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li>
+                                    <a href="#"><img src="images/search-icon.png" class="header--search-icon" /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--End .header__nav-->
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="header__hotline">
+                            <span>Hotline 24/7</span>
+                            <span>090.154.8866</span>
+                        </div>
                     </div>
                 </div>
-                <!-- end header__hotline -->
             </div>
-        </div> 
+            <!--End .container-->
+        </header>
+        <!--End .header-->
+        <section id="main-slide" class="main-slide owl-carousel owl-theme">
+            <img src="images/banner.png" alt="#">
+            <img src="images/banner-2.png" alt="#">
+            <img src="images/banner.png" alt="#">
+            <img src="images/banner-2.png" alt="#">
+            <!-- <div class="main-slide__controls">
+            <span class="main-slide--prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+            <span class="main-slide--next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </span>
+        </div> -->
+            <!--End .main-slide__controls-->
 
-    </header><!-- end header-->
+            <!-- <div class="main-slide__dots">
+            <span class="main-slide--dot"></span>
+            <span class="main-slide--dot"></span>
+            <span class="main-slide--dot active"></span>
+            <span class="main-slide--dot"></span>
+        </div> -->
+            <!--End .main-slide__dots-->
 
-    <main class="main">
-        <div class="main__slide">
-
-            <img src="images/banner.png" alt="">
-            <div class="main__slide-controls">
-                <span class="main-slide--prev">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="main-slide--next">
-                    <i class="fas fa-chevron-right"></i>
-                </span>
-            </div>
-            <!-- end main__slide-controls -->
-            <div class="main__slide-dots">
-                <span class="main-slide--dot"></span>
-                <span class="main-slide--dot"></span>
-                <span class="main-slide--dot active"></span>
-                <span class="main-slide--dot"></span>
-            </div> 
-            <!-- end main__slide-dots -->
-            
-        </div> <!--end main__slide-->
+        </section>
+        <!--End .main-slide-->
 
         <section class="section-box why-us">
             <div class="container">
                 <h2 class="section-title">Tại sao chọn Viedeli</h2>
                 <div class="row">
-
                     <div class="col-lg-4 col-xs-12">
                         <div class="why-us__item">
-                            <img src="images/service-icon.png" alt="">
+                            <img src="images/service-icon.png" />
                             <h3>Chất lượng cao</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor em ipsum quia dolor sit amet, consemag</p>
-                        </div> 
-                        <!--end why-us__item-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
+                                em ipsum quia dolor sit amet, consemag</p>
+                        </div>
+                        <!--End .why-us__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="why-us__item">
-                            <img src="images/service-icon.png" alt="">
-                            <h3>Chất lượng cao</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor em ipsum quia dolor sit amet, consemag</p>
-                        </div> 
-                        <!--end why-us__item-->
+                            <img src="images/service-icon.png" />
+                            <h3>Đa chủng loại</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
+                                em ipsum quia dolor sit amet, consemag</p>
+                        </div>
+                        <!--End .why-us__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="why-us__item">
-                            <img src="images/service-icon.png" alt="">
-                            <h3>Chất lượng cao</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor em ipsum quia dolor sit amet, consemag</p>
-                        </div> 
-                        <!--end why-us__item-->
+                            <img src="images/service-icon.png" />
+                            <h3>Sản phẩm tự nhiên</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
+                                em ipsum quia dolor sit amet, consemag</p>
+                        </div>
+                        <!--End .why-us__item-->
                     </div>
                 </div>
-                <p class="why-us--reamore"><a href="#">Xem Thêm</a></p>
+                <!--End .row-->
+                <p class="why-us--reamore">
+                    <a href="#">Xem thêm</a>
+                </p>
             </div>
-        </section> <!--end box why-us-->
+        </section>
+        <!--End .why-us-->
 
         <section class="section-box product-box">
             <div class="container">
                 <h2 class="section-title">
                     Sản phẩm <span>Nổi bật</span> Vie Deli Coffee
                 </h2>
-            </div>
-            <div class="product-box__list">
-                <div class="row">
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="product-box--item">
-                            <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                            <h3><a href="#">Cafe nhúng</a></h3>
-                            <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                            <span class="item__price">150.000 đ/kg</span>
-                        </div> 
-                        <!--end product-box--item-->
+                <div class="product-box__list">
+                    <div class="row">
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
+                                <h3><a href="#">Cafe nhúng</a></h3>
+                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
+                                <span class="item__price">150.000 đ/kg</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
+                                <h3><a href="#">Cafe nhúng</a></h3>
+                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
+                                <span class="item__price">150.000 đ/kg</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
+                                <h3><a href="#">Cafe nhúng</a></h3>
+                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
+                                <span class="item__price">150.000 đ/kg</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="product-box--item">
-                            <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                            <h3><a href="#">Cafe nhúng</a></h3>
-                            <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                            <span class="item__price">150.000 đ/kg</span>
-                        </div> 
-                        <!--  -->
-                        <!--end product-box--item-->
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="product-box--item">
-                            <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                            <h3><a href="#">Cafe nhúng</a></h3>
-                            <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                            <span class="item__price">150.000 đ/kg</span>
-                        </div> 
-                        <!--end product-box--item-->
-                    </div>
-
                     <div class="product-box__controls">
                         <span class="controls--prev">
-                            <i class="fas fa-chevron-left"></i>
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </span>
                         <span class="controls--next">
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </span>
-                    </div> 
-                    <!--end product-box__controls-->
+                    </div>
+                    <!--End .product-box__controls-->
                 </div>
-            </div> 
-            <!-- end product-box__list -->
-        </section> <!--end product-box-->
+                <!--End .product-box__list-->
+            </div>
+        </section>
+        <!--End .product-box-->
 
         <section class="section-box location-box">
             <div class="row">
                 <div class="col-lg-6 col-xs-12 col-sm-12 location-box__item">
-                    <a href="#"><img src="images/service-bg.jpg" alt=""></a>
+                    <img src="images/service-bg.jpg" />
                 </div>
-                <div class="col-lg-6 col-xs-12 col-sm-12 location-box__item">
+                <div class="col-lg-6 col-xs-12 col-sm-12  location-box__item">
                     <h2>Điểm phục vụ</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, quisquam exercitationem aspernatur fuga, eveniet eum autem earum quod dolorem, reiciendis maxime eos quos nemo aut laudantium. Soluta ea nesciunt ullam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint incidunt laboriosam recusandae eaque ducimus nobis mollitia id similique sunt quam facere voluptatum, iste illum unde. Autem eius nisi aspernatur facilis?</p>
-                    <span><a href="">Xem thêm<i class="fas fa-chevron-right"></i></a></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Este natus error sit voluptatem
+                        accusantium doloremque laumagni dvdolore magnam aliquam quaerat voluptatem.</p>
+                    <span><a href="#">Xem thêm <i class="fa fa-angle-right"></i></a></span>
                 </div>
             </div>
-        </section> <!--end location-box-->
-        
+        </section>
+        <!--End .location-box-->
+
         <section class="section-box news-box">
             <div class="container">
-                <h2 class="section-title">Tin nổi bật</h2>
+                <h2 class="section-title">tin nổi bật</h2>
                 <div class="row">
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" alt=""></a>
+                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
                             <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a></h3>
-                            <p class="itme__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab ea similique inventore quos distinctio amet. Odio, adipisci ipsum.</p>
+                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            </h3>
+                            <p class="item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
+                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
+                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                            </p>
                         </div>
+                        <!--End .news-box__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" alt=""></a>
+                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
                             <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a></h3>
-                            <p class="itme__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab ea similique inventore quos distinctio amet. Odio, adipisci ipsum.</p>
+                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            </h3>
+                            <p class="item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
+                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
+                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                            </p>
                         </div>
+                        <!--End .news-box__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" alt=""></a>
+                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
                             <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a></h3>
-                            <p class="itme__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab ea similique inventore quos distinctio amet. Odio, adipisci ipsum.</p>
+                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            </h3>
+                            <p class="item__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
+                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
+                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                            </p>
                         </div>
+                        <!--End .news-box__item-->
                     </div>
-                </div>         
+                </div>
+
             </div>
-        </section> <!--end news-box-->
+        </section>
+        <!--End .news-box-->
 
         <section class="section-box partner-box">
             <div class="container">
                 <h2 class="section-title">Đối tác</h2>
-                <div class="row partner-box__list">
+                <div id="partner" class="row partner-box__list owl-carousel owl-theme">
                     <div class="col-lg-3 col-xs-6 partner-box--item">
                         <a href="#"><img src="images/partner-1.png" alt=""></a>
                     </div>
                     <div class="col-lg-3 col-xs-6 partner-box--item">
-                        <a href="#"><img src="images/partner-2.png" alt=""></a>
+                        <a href="#"><img style="
+                        width: 99px;
+                        margin-left: 64px;
+                    " src="images/partner-2.png" alt=""></a>
                     </div>
                     <div class="col-lg-3 col-xs-6 partner-box--item">
                         <a href="#"><img src="images/partner-3.png" alt=""></a>
@@ -228,120 +274,149 @@
                     <div class="col-lg-3 col-xs-6 partner-box--item">
                         <a href="#"><img src="images/partner-4.png" alt=""></a>
                     </div>
+                    <div class="col-lg-3 col-xs-6 partner-box--item">
+                        <a href="#"><img src="images/partner-1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 col-xs-6 partner-box--item">
+                        <a href="#"><img style="
+                        width: 99px;
+                        margin-left: 64px;
+                    " src="images/partner-2.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 col-xs-6 partner-box--item">
+                        <a href="#"><img src="images/partner-3.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-3 col-xs-6 partner-box--item">
+                        <a href="#"><img src="images/partner-4.png" alt=""></a>
+                    </div>
+
                 </div>
             </div>
-        </section> <!--end partner-box-->
-    </main> <!--end main-->
+        </section>
+        <!--End .partner-box-->
 
-    <footer class="footer">
-        <section class="section-box contact-box">
-            <div class="row">
-                <div class="col-lg-4 col-xs-12 col-sm-12  contact-box--item">
-                    <img src="images/contact-left.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-xs-12 col-sm-12  contact-box--item">
-                   <div class="contact-box--form">
-                       <form action="" method="GET">
-                           <h2 class="section-title">Liên hệ mua hàng</h2>
+        <footer class="footer">
+            <section class="section-box contact-box">
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12 col-sm-12 contact-box--item">
+                        <img src="images/contact-left.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-xs-12 col-sm-12 contact-box--item">
+                        <div class="contact-box--form">
+                            <form id="commentForm" action="">
+                                <h2 class="section-title">Liên hệ mua hàng</h2>
+                                <div class="msg"></div>
+                                <div class="form-group has-icon user-icon">
+                                    <input type="text" name="name" placeholder="Họ và tên" />
+                                </div>
 
-                            <div class="form-group has-icon user-icon">
-                               <input type="text" name="" placeholder="Họ và tên">
-                            </div>
-                            <div class="form-group has-icon email-icon">
-                                <input type="email" name="" placeholder="Email">
-                            </div>
-                            <div class="form-group has-icon phone-icon">
-                                <input type="text" name="" placeholder="Số điện thoại">
-                            </div>
+                                <div class="form-group has-icon email-icon">
+                                    <input type="email" name="email" placeholder="Email" />
+                                </div>
 
-                            <div class="form-group contact-box--form--button-warp">
-                                <div class="row">
-                                    <div class="col-lg-5 col-xs-12">
-                                        <button type="submit">Liên hệ</button>
-                                    </div>
-                                    <div class="col-lg-5 col-xs-12">
-                                        <div class="contact-box--form__hotline">
-                                            <span>HOTLINE 24/7</span>
-                                            <span>090.154.8866</span>
+                                <div class="form-group has-icon phone-icon">
+                                    <input type="text" name="phone" placeholder="Số điện thoại" />
+                                </div>
+
+                                <div class="form-group contact-box--form--button-wrap">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-xs-12">
+                                            <button type="submit">Liên hệ</button>
+                                        </div>
+                                        <div class="col-lg-7 col-xs-12">
+                                            <div class="contact-box--form__hotline">
+                                                <span>HOTLINE 24/7</span>
+                                                <span>090.154.8866</span>
+                                            </div>
+                                            <!--End .contact-box--form__hotline-->
                                         </div>
                                     </div>
                                 </div>
+
+                            </form>
+                        </div>
+                        <!--End .contact-box--form-->
+                    </div>
+                    <div class="col-lg-4 col-xs-12 col-sm-12 contact-box--item">
+                        <img src="images/contact-right.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--End .contact-box-->
+
+            <section class="footer-inner section-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-xs-12 footer--logo">
+                            <a href="#"><img src="images/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-3 col-xs-6">
+                            <div class="footer--item">
+                                <h3>Công ty Vie Deli Việt Nam</h3>
+
+                                <p>Vie Deli Hanoi: <br />
+                                    +84 (0)983 418 935 <br />
+                                    Vie Deli Saigon: <br />
+                                    +84 (0)917 850 810</p>
+                                <p>viedelicoffee@gmail.com</p>
                             </div>
-                            <!-- end contact-box--form--button-warp -->
-                       </form>
-                   </div>
-                   <!-- end contact-box--form -->
-                </div>
-                <div class="col-lg-4 col-xs-12 col-sm-12  contact-box--item">
-                    <img src="images/contact-right.jpg" alt="">
-                </div>
-            </div>
-        </section> <!--end contact-box-->
-
-        <section class="footer-inner section-box">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-xs-12 footer--logo">
-                        <a href="#"><img src="images/logo.png" alt=""></a>
-                    </div>
-                    <div class="col-lg-3 col-xs-6">
-                        <div class="footer--item">
-                            <h3>Công ty Vie Deli Việt Nam</h3>
-                            <p>Vie Deli Hanoi: <br/>
-                                +84 (0)983 418 935 <br/>
-                                Vie Deli Saigon: <br/>
-                                +84 (0)917 850 810</p>
-                            <p>viedelicoffee@gmail.com</p>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-xs-6">
-                        <div class="footer--item">
-                            <h3>ĐỊA CHỈ</h3>
+                        <div class="col-lg-3 col-xs-6">
+                            <div class="footer--item">
+                                <h3>ĐỊA CHỈ</h3>
 
-                            <p><b>Hà Nội:</b><br/>
-                                Số 33 Ngõ 424 Trần Khát Chân, Phường Phố Huế, Q. Hai Bà Trưng </p>
+                                <p><b>Hà Nội:</b><br />
+                                    Số 33 Ngõ 424 Trần Khát Chân, Phường Phố Huế, Q. Hai Bà Trưng </p>
 
-                            <p><b>Sài Gòn:</b><br/>
-                                29/11 Nguyễn Bỉnh Khiêm, Phường Đa Kao, Q1</p>
+                                <p><b>Sài Gòn:</b><br />
+                                    29/11 Nguyễn Bỉnh Khiêm, Phường Đa Kao, Q1</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-xs-12">
-                        <div class="footer--item footer__subscribe-box">
-                            <h3>ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</h3>
-                            <div class="footer--subcribe">
-                                <form action="">
-                                    <div class="footer--email">
-                                        <span><i class="far fa-envelope"></i></span>
-                                        <input type="email" placeholder="Email của bạn" name="" id="">
-                                    </div>
-                                </form>
-                            </div><!--End .footer--subcribe-->
+                        <div class="col-lg-3 col-xs-12">
+                            <div class="footer--item footer__subscribe-box">
+                                <h3>ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</h3>
+                                <div class="footer--subcribe">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="email" placeholder="Email của bạn" name="" id="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--End .footer--subcribe-->
 
-                            <div class="footer--social">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-google-plus-g"></i></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fas fa-rss"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                    </li>
-                                </ul>
-                            </div><!--End .footer--social-->
+                                <div class="footer--social">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-rss"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End .footer--social-->
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section><!--End .footer-inner-->
-    </footer>
-</body>
+            </section>
+            <!--End .footer-inner-->
+        </footer>
+        <!--End .footer-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
 </html>
