@@ -25,7 +25,7 @@ File này code các thành phần reset CSS, định nghĩa font-face
   padding: 0;
   margin: 0;
   outline: none;
-  border: none;
+  /* border: none; */
   box-sizing: border-box;
 }
 
