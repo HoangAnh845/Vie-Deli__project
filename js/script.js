@@ -69,5 +69,13 @@ $(document).ready(function () {
         }
     });
 
-    
+    //ấn hiện cho nút search
+    let searchObjec = $('.search a');
+    let searchItem = $('.search-item');
+    searchItem.hide();
+    searchObjec.on('click',function(){
+        if(searchObjec.length>0){
+            searchItem.toggle();
+        }
+    });
 });

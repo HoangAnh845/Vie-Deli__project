@@ -45,6 +45,36 @@
   -o-transform: translateY(5px);
 }
 
+.search {
+  position: relative;
+}
+
+.search-item {
+  display: flex;
+  position: absolute;
+  width: 220px;
+  /* height: 10px; */
+  top: 0px;
+  right: 16px;
+  z-index: 999;
+}
+
+.search-item input {
+  border: 2px solid gainsboro;
+  padding-left: 10px;
+  width: 222px;
+  font-size: 11px;
+}
+
+.search-item span {
+  display: inline-block;
+  width: 40px;
+  background: gainsboro;
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #333;
+}
+
 #toggle-menu {
   display: none;
 }
@@ -504,6 +534,7 @@ label.error {
   background: #e6e6e6;
   width: 100%;
   padding-left: 40px;
+  border: none;
 }
 
 .footer .footer--subcribe .form-group {
@@ -917,31 +948,196 @@ label.error {
   padding: 10px 0px;
 }
 
-.imaaa {
-  position: relative;
-}
-.imsss {
-  display: flex;
-  position: absolute;
-  width: 220px;
-  /* height: 10px; */
-  top: 0px;
-  right: 16px;
-  z-index: 999;
+/* Begin service point */
+.choose-place {
+  border: 1px solid white;
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
-.imsss input {
-  border: 2px solid gainsboro;
-  padding-left: 10px;
-  width: 222px;
-  font-size: 11px;
+.btn {
+  border: 1px solid #d39d5d !important;
 }
 
-.imsss span {
-  display: inline-block;
-  width: 40px;
-  background: gainsboro;
-  padding: 10px 10px;
-  font-size: 18px;
+/* Begin  promotion*/
+
+.promotion-content,
+.promotion-content2 {
+  background-color: var(--primary-color);
+  top: 100px;
+  right: 53px;
+  width: 354px;
+}
+
+.promotion-content2 {
+  background-color: white;
   color: #333;
+}
+
+.promotion-content .promotion__content-item,
+.promotion-content2 .promotion__content-item2 {
+  display: block;
+  color: #fffeff;
+  padding: 44px 40px;
+}
+
+.promotion-content2 .promotion__content-item2 {
+  color: #333;
+}
+
+.promotion-content .promotion__content-item button,
+.promotion-content2 .promotion__content-item2 button {
+  color: #fffeff;
+  font-size: 15px;
+  padding: 9px 22px;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.promotion-content2 .promotion__content-item2 button {
+  border: none;
+  background: var(--primary-color);
+}
+
+/* End  promotion*/
+
+/* Begin information */
+
+.page-item li {
+  margin-right: 14px;
+  width: 36px;
+  padding: 10px 10px;
+  border-radius: 37px;
+  text-align: center;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  -ms-border-radius: 37px;
+  -o-border-radius: 37px;
+}
+
+.page-item li:nth-child(1) {
+  background: var(--primary-color);
+}
+
+/* End information */
+
+/* Begin contact  */
+.contact .contact-context span {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.contact .contact-context span.contact-context--item::before,
+.position-relative span::before {
+  content: "";
+  background: url(../images/Chi\ tiết\ địa\ điểm_2.png) no-repeat center center;
+  position: absolute;
+  top: -9px;
+  left: -38px;
+  width: 26px;
+  height: 38px;
+}
+
+.position-relative span::before {
+  background-size: 13px;
+  top: 63px;
+  left: 34px;
+  width: 26px;
+  height: 38px;
+}
+
+.contact .contact-context span.contact-context--item h6 {
+  line-height: 6px;
+}
+
+.contact .contact-context span.contact-context--item2::before {
+  content: "";
+  background: url(../images/Liên\ hệ_2.png) no-repeat center center;
+  position: absolute;
+  top: 0px;
+  left: -31px;
+  width: 31px;
+  height: 34px;
+}
+
+.contact .contact-context span button::before {
+  content: "";
+  background: url(../images/Liên\ hệ_3.png) no-repeat center center;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 31px;
+  height: 34px;
+}
+
+.contact .contact-context span button.btn {
+  border: none !important;
+}
+
+.contact-input input {
+  margin-bottom: 17px;
+}
+
+.contact-input button.btn {
+  border: none !important;
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 46px;
+}
+
+/* End contact  */
+
+/* Begin  */
+
+.posts div {
+  padding: 70px 70px;
+  line-height: 20px;
+}
+
+.posts div h4 {
+  padding: 25px 0px;
+}
+
+.posts div img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* End */
+
+/* Begin  location-details*/
+
+.location-details {
+  padding: 26px 40px;
+  line-height: 20px;
+}
+
+.review span{
+  border-bottom: 8px solid rgba(128, 128, 128, 0.185) ;
+} 
+
+.cover-progress div.progress{
+  width: 49% !important ;
+}
+
+.text-progress h3,
+.text-progress p{
+  color:  var(--text-color);
+}
+
+.cover-progress div.progress-bar{
+  background-color: var(--primary-color) !important;
+}
+
+.cover div.cover-progress:nth-child(2),
+.cover div.cover-progress:nth-child(4){
+  margin: 15px 0px;
+}
+
+/* Begin sign-succes */
+.sign-succes img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
