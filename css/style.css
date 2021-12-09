@@ -269,11 +269,11 @@
 }
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
-  top: 29%;
+  top: 45%;
 }
 
 .owl-carousel .owl-nav button.owl-prev{
-  left: -1%;
+  left: 1%;
 }
 
 .owl-carousel .owl-nav button.owl-nex{
