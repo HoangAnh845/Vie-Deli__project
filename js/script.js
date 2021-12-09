@@ -110,7 +110,8 @@ $(document).ready(function () {
 
     // ẩn hiển cho nút .location-box
     $('.location-box__item p').eq(1).hide();
-    $('.more').click(function () {
+    $('.more').click(function (e) {
+        e.preventDefault();
         if (!$('.location-box__item p').eq(1).hasClass('show')) {
             $('.location-box__item p').eq(1).addClass('show');
             $('.location-box__item p').eq(1).show();
