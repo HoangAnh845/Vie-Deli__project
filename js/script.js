@@ -23,7 +23,6 @@ $(document).ready(function () {
         // autoplayHoverPause:true
     });
 
-    // slider đối tác
     $('#partner').owlCarousel({
         loop: true,
         items: 4,
@@ -49,6 +48,14 @@ $(document).ready(function () {
         nav: false,
         dots: true,
     });
+
+    $('#simply-coffe-MuiriAA').owlCarousel({
+        loop: true,
+        items: 1,
+        nav: false,
+        dots: false,
+    });
+
 
     // validate form liên hệ
     $('#commentForm').validate({
@@ -85,26 +92,12 @@ $(document).ready(function () {
     });
 
     //ấn hiện cho nút search
-    let searchObjec = $('.search a');
+    let searchObjec = $('.search span');
     let searchItem = $('.search-item');
     searchItem.hide();
     searchObjec.on('click', function () {
         if (searchObjec.length > 0) {
             searchItem.toggle();
-        }
-    });
-
-    // ẩn hiển cho nút .why-us--reamore
-    $('.content_why-us').hide();
-    $('.why-us--reamore').click(function () {
-        if (!$('.content_why-us').hasClass('show')) {
-            $('.content_why-us').addClass('show');
-            $('.content_why-us').show();
-            $('.why-us--reamore button').text('Ẩn bớt');
-        } else {
-            $('.content_why-us').removeClass('show');
-            $('.content_why-us').hide();
-            $('.why-us--reamore button').text('Xem thêm');
         }
     });
 
@@ -121,4 +114,11 @@ $(document).ready(function () {
         }
     });
 
+
+    // sự kiện onload
+    setTimeout(function(){
+        $('.preLoader').css('opacity','0');
+    },1500);
+   
 });
+

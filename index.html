@@ -18,10 +18,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
             integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     </head>
 
     <body>
+        <div class="preLoader">
+            <img src="images/8ddaaa6c732debcbd43351d36de6bb49.gif" alt="">
+        </div>
+
         <header class="header">
             <div class="container">
                 <div class="row">
@@ -42,29 +45,87 @@
                         <nav class="header__nav">
                             <ul>
                                 <li><a href="introduce.html">Giới thiệu</a></li>
-                                <li><a href="product-portfolio.html">Sản phẩm</a></li>
+                                <li class="position-relative">
+                                    <a href="product-portfolio.html">Sản phẩm<i class="px-1 fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu position-absolute">
+                                        <li>
+                                            <a class="position-relative" href="Roasted__coffee-beans.html">Cà phê rang
+                                                hạt <i class="pe-2 fas fa-caret-right"></i></a>
+                                            <ul class="sub-menu position-absolute top-0">
+                                                <li><a href="product-details.html">Cà phê hạt robusta VieDeli túi 500g</a></li>
+                                                <li><a href="product-details-Arabica_VieDeli-Seed.html">Cà phê hạt
+                                                        arabica VieDeli túi 500g</a></li>
+                                                <li><a href="product-details-RobustaCuli_VieDeli-Seed.html">Cà phê hạt
+                                                        robusta culi VieDeli túi 500g</a></li>
+                                                <li class="border-0 mb-4"><a
+                                                        href="product-details-Arabica_DaLat-Seed.html">Cà phê hạt
+                                                        arabica DaLat VieDeli túi 500g</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="position-relative" href="Roasted__ground-coffee.html">Cà phê rang đã xay <i
+                                                    class="pe-2 fas fa-caret-right"></i></a>
+                                            <ul class="sub-menu position-absolute top-0">
+                                                <li><a href="product-details-Arabica_DaLat-Powdered.html">Cà phê bột
+                                                        arabica DaLat VieDeli túi 500g</a></li>
+                                                <li><a href="product-details-Arabica_VieDeli-Powdered.html">Cà phê bột
+                                                        arabica VieDeli túi 500g</a></li>
+                                                <li><a href="product-details-RobustaCuli_VieDeli-Powdered.html">Cà phê
+                                                        bột robusta culi VieDeli túi 500g</a></li>
+                                                <li><a href="#">Cà phê bột robusta culi VieDeli túi 500g</a></li>
+                                                <li class="border-0 mb-4"><a href="#">Cà phê bột robusta VieDeli túi
+                                                        500g</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="position-relative" href="Dip-coffee.html">Cà phê nhúng <i
+                                                    class="pe-2 fas fa-caret-right"></i></a>
+                                            <ul class="sub-menu position-absolute top-0">
+                                                <li><a href="product-details-vietnamita_robusta-12.html">Cà phê nhúng Vietnamita Robusta hộp 12 túi lọc</a></li>
+                                                <li class="border-0 mb-4"><a href="product-details-vietnamita_robusta-30.html">Cà phê nhúng vietnamita robusta
+                                                        bịch 30 túi lọc</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="border-0 mb-4">
+                                            <a class="position-relative" href="International__specialty-coffee.html">Cà phê đặc sản quốc tế <i
+                                                    class="pe-2 fas fa-caret-right"></i></a>
+                                            <ul class="sub-menu position-absolute top-0">
+                                                <li><a href="product-details-MuiriAA.html">Muiri AA hộp 250g</a></li>
+                                                <li><a href="product-details-Finca_Nejapa.html">Finca Nejapa hộp 250g</a></li>
+                                                <li class="border-0 mb-4"><a href="product-details-Dona_Daisy.html">Dona Daisy hộp 250g</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- End .sub-menu -->
                                 <li><a href="service-point.html">Điểm phục vụ</a></li>
-                                <li><a href="promotion.html">Khuyến mãi</a></li>
-                                <li><a href="information.html">Tin tức</a></li>
+                                <li class="position-relative">
+                                    <a href="information.html">Tin tức<i class="px-1 fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu position-absolute">
+                                        <li><a href="promotion.html">Khuyến mại</a></li>
+                                        <li class="border-0 mb-3"><a href="Coffee-knowledge.html">Kiến thức</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="contact.html">Liên hệ</a></li>
                                 <li class="search">
-                                    <a href="#"><img src="images/search-icon.png" class="header--search-icon mb-3" /></a>
+                                    <span></span>
                                 </li>
-                                <li class="search-bar">
-                                    <div class="search-item">
-                                        <input style="float: right;" type="text" placeholder="Nhập nội dung tìm kiếm...">
+                                <li class="search-bar ">
+                                    <div class="search-item position-absolute">
+                                        <input style="float: right;" type="text"
+                                            placeholder="Nhập nội dung tìm kiếm...">
                                         <span><i class="fas fa-search"></i></span>
                                     </div>
                                 </li>
                             </ul>
-                           
+
                         </nav>
                         <!--End .header__nav-->
                     </div>
                     <div class="col-lg-2">
                         <div class="header__hotline">
                             <span>Hotline 24/7</span>
-                            <span style="line-height: 5px;">090.154.8866</span>
+                            <span style="line-height: 5px;">+84 963 868 645</span>
                         </div>
                     </div>
                 </div>
@@ -72,32 +133,17 @@
             <!--End .container-->
         </header>
         <!--End .header-->
-        
+
         <section id="main-slide" class="main-slide owl-carousel owl-theme" style="margin-top: -24px;">
             <img src="images/banner.png" alt="#">
             <img src="images/banner-2.png" alt="#">
             <img src="images/banner.png" alt="#">
             <img src="images/banner-2.png" alt="#">
-            <!-- <div class="main-slide__controls">
-            <span class="main-slide--prev">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </span>
-            <span class="main-slide--next">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </span>
-        </div> -->
-            <!--End .main-slide__controls-->
-
-            <!-- <div class="main-slide__dots">
-            <span class="main-slide--dot"></span>
-            <span class="main-slide--dot"></span>
-            <span class="main-slide--dot active"></span>
-            <span class="main-slide--dot"></span>
-        </div> -->
-            <!--End .main-slide__dots-->
 
         </section>
         <!--End .main-slide-->
+
+
 
         <section class="section-box why-us">
             <div class="container">
@@ -136,48 +182,11 @@
                         </div>
                         <!--End .why-us__item-->
                     </div>
-                    
-                </div>
-                <!--End .row-->
-                <div class="row content_why-us">
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="why-us__item">
-                            <img src="images/service-icon.png" />
-                            <h3>Chất lượng cao</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
-                                em ipsum quia dolor sit amet, consemag</p>
-                        </div>
-                        <!--End .why-us__item-->
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="why-us__item">
-                            <img src="images/service-icon.png" />
-                            <h3>Đa chủng loại</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
-                                em ipsum quia dolor sit amet, consemag</p>
-                        </div>
-                        <!--End .why-us__item-->
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <div class="why-us__item">
-                            <img src="images/service-icon.png" />
-                            <h3>Sản phẩm tự nhiên</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dtium, ququi dolor
-                                em ipsum quia dolor sit amet, consemag</p>
-                        </div>
-                        <!--End .why-us__item-->
-                    </div>
-                    
+
                 </div>
                 <!--End .row-->
                 <p class="why-us--reamore">
-                    <button type="button" class="btn">Xem thêm</button>
+                    <button type="button" class="button btn"><a href="introduce.html">Xem thêm</a></button>
                     <!-- <button class="btn" type="button"><a href="#">Xem thêm</a></button> -->
                 </p>
             </div>
@@ -193,8 +202,37 @@
                     <div id="main_product-box" class="row owl-carousel owl-theme">
                         <div class="col-lg-4 col-xs-12">
                             <div class="product-box--item">
-                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
+                                <a href="#"><img src="images/bot-arabica-dalat-viedeli-1.png" alt=""></a>
+                                <h3><a href="#">Cà phê arabica Dalat VieDeli hạt rang hoặc xay mịn</a></h3>
+                                <span class="item__category"><a href="#">thuần arabica vùng cao chế biến ướt của Cầu
+                                        Đất, Đà Lạt</a></span>
+                                <span class="item__price">140.000 đ/túi 500g</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/bot-arabica-viedeli.png" alt=""></a>
+                                <h3><a href="#">Cà phê arabica VieDeli hạt rang hoặc xay mịn</a></h3>
+                                <span class="item__category"><a href="#">thuần arabica vùng thấp chế biến ướt của Tây
+                                        Nguyên</a></span>
+                                <span class="item__price">130.000 đ/túi 500g</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/bot-robusta-culi-viedeli.png" alt=""></a>
+                                <h3><a href="#">Cà phê robusta culi VieDeli hạt rang hoặc xay mịn</a></h3>
+                                <span class="item__category"><a href="#">thuần robusta culi Dak Lak</a></span>
+                                <span class="item__price">95.000 đ/túi 500g</span>
+                            </div>
+                            <!--End .product-box--item-->
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="product-box--item">
+                                <a href="#"><img src="images/bot-robusta-viedeli.png" alt=""></a>
+                                <h3><a href="#">Cà phê robusta VieDeli hạt rang hoặc xay mịn</a></h3>
                                 <span class="item__category"><a href="#">Vinamita Robusta</a></span>
                                 <span class="item__price">150.000 đ/kg</span>
                             </div>
@@ -202,46 +240,19 @@
                         </div>
                         <div class="col-lg-4 col-xs-12">
                             <div class="product-box--item">
-                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
-                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                                <span class="item__price">150.000 đ/kg</span>
+                                <a href="#"><img src="images/vietnamita-robusta_f-e1627965569988.jpg" alt=""></a>
+                                <h3><a href="#">Cà phê nhúng Vietnamita Robusta hộp 12 túi lọc</a></h3>
+                                <span class="item__category"><a href="#">Robusta</a></span>
+                                <span class="item__price">36.000 đ/hộp</span>
                             </div>
                             <!--End .product-box--item-->
                         </div>
                         <div class="col-lg-4 col-xs-12">
                             <div class="product-box--item">
                                 <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
-                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                                <span class="item__price">150.000 đ/kg</span>
-                            </div>
-                            <!--End .product-box--item-->
-                        </div>
-                        <div class="col-lg-4 col-xs-12">
-                            <div class="product-box--item">
-                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
-                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                                <span class="item__price">150.000 đ/kg</span>
-                            </div>
-                            <!--End .product-box--item-->
-                        </div>
-                        <div class="col-lg-4 col-xs-12">
-                            <div class="product-box--item">
-                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
-                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                                <span class="item__price">150.000 đ/kg</span>
-                            </div>
-                            <!--End .product-box--item-->
-                        </div>
-                        <div class="col-lg-4 col-xs-12">
-                            <div class="product-box--item">
-                                <a href="#"><img src="images/product-thumbnail.jpg" alt=""></a>
-                                <h3><a href="#">Cafe nhúng</a></h3>
-                                <span class="item__category"><a href="#">Vinamita Robusta</a></span>
-                                <span class="item__price">150.000 đ/kg</span>
+                                <h3><a href="#">Cà phê hạt arabica DaLat VieDeli túi 500g</a></h3>
+                                <span class="item__category"><a href="#">thuần robusta Dak Lak</a></span>
+                                <span class="item__price">90.000 đ/túi 500g</span>
                             </div>
                             <!--End .product-box--item-->
                         </div>
@@ -268,13 +279,14 @@
                 </div>
                 <div class="col-lg-6 col-xs-12 col-sm-12  location-box__item">
                     <h2>Điểm phục vụ</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Este natus error sit voluptatem
-                        accusantium doloremque laumagni dvdolore magnam aliquam quaerat voluptatem.</p>
+                    <p>1. Kios số 1, tầng 1 tòa nhà 165B Thái Hà, quận Đống Đa, Hà Nội, mở cửa sáng từ 9-12h, chiều từ
+                        4-7h các ngày trong tuần trừ Chủ Nhật, điện thoại 024 6278 0409;2. Kho tạm trữ số 33 ngõ 424
+                        Trần Khát Chân, quận Hai Bà Trưng, Hà Nội, mở cửa chiều từ 1-3:30h hằng ngày, điện thoại 098 341
+                        8935;3. Số 3 ngõ 205/37/16 đường Xuân Đỉnh, quận Bắc Từ Liêm, điện thoại 093 816 6918;4. Tra
+                        Linh Farm Store, 331 Bến Vân Đồn, phường 1, quận 4 Ho Chi Minh City, điện thoại 092 800 63 10.
+                    </p>
                     <p> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>    
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
                     <span class="more"><a href="#">Xem thêm <i class="fa fa-angle-right"></i></a></span>
                 </div>
             </div>
@@ -287,42 +299,39 @@
                 <div class="row">
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
-                            <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            <a href="#"><img src="images/phin-arabica-1024x1024.png" /></a>
+                            <p class="item__category"><a href="#">Khuyến Mãi</a></p>
+                            <h3 class="mb-4"><a href="#">MUA CÀ PHÊ TẶNG PHIN NHÔM HỢP KIM TINH CHẤT TIÊU CHUẨN NHẬT</a>
                             </h3>
                             <p class="item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
-                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
-                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                                Từ nay đến hết ngày 31.12.2021, Quý khách mua cà phê NGUYÊN CHẤT của VieDeli từ 1kg cà
+                                phê của VieDeli hoặc giá trị tương đương từ 200 nghìn đồng trở lên...
                             </p>
                         </div>
                         <!--End .news-box__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
-                            <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            <a href="#"><img src="images/IMG_0320-1024x1024.jpg" /></a>
+                            <p class="item__category"><a href="#">Khuyến Mãi</a></p>
+                            <h3 class="mb-4"><a href="#">MUA CÀ PHÊ TẶNG BÌNH PHA FRENCH PRESS CỦA VIEDELI THÁI HÀ</a>
                             </h3>
                             <p class="item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
-                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
-                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                                Từ nay đến hết ngày 31.12.2021, các quý khách mua cà phê của VieDeli từ 4kg arabica
+                                dalat hoặc giá trị tương đương từ 1 triệu đồng trở lên theo giá bán lẻ,...
                             </p>
                         </div>
                         <!--End .news-box__item-->
                     </div>
                     <div class="col-lg-4 col-xs-12">
                         <div class="news-box__item">
-                            <a href="#"><img src="images/new-thumbnail-1.jpg" /></a>
-                            <p class="item__category"><a href="#">Tin nổi bật</a></p>
-                            <h3><a href="#">Viedeli - đại lý phân phối cafe Y5 đã có mặt tại thành phố Nha Trang</a>
+                            <a href="#"><img src="images/vb_coc-trang_600x600.png" /></a>
+                            <p class="item__category"><a href="#">Khuyến Mãi</a></p>
+                            <h3 class="mb-5"><a href="#">TẶNG SẢN PHẨM MỚI RA MẮT</a>
                             </h3>
                             <p class="item__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae
-                                eveniet itaque, error consequuntur voluptatem fugit pariatur voluptatum iure sequi, ab
-                                ea similique inventore quos distinctio amet. Odio, adipisci ipsum.
+                                Cà phê nhúng vietnamita robusta bịch 30 túi lọc Chương trình kéo dài đến hết ngày
+                                31.12.2021 ____________ Nhằm giới thiệu sản phẩm mới, quảng bá hình ảnh...
                             </p>
                         </div>
                         <!--End .news-box__item-->
@@ -491,6 +500,12 @@
             <!--End .footer-inner-->
         </footer>
         <!--End .footer-->
+
+        <!-- back to top -->
+        <div class="back-to-top">
+            <a href=""><i class="fas fa-arrow-up"></i></a>
+        </div>
+
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
