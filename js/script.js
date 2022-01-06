@@ -7,6 +7,9 @@ $(document).ready(function () {
         items: 1,
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', ' <i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
@@ -18,9 +21,7 @@ $(document).ready(function () {
                 items: 1
             }
         }
-        // autoplay:true,
-        // autoplayTimeout:2000,
-        // autoplayHoverPause:true
+
     });
 
     $('#partner').owlCarousel({
@@ -114,11 +115,29 @@ $(document).ready(function () {
         }
     });
 
-
     // sự kiện onload
-    setTimeout(function(){
-        $('.preLoader').css('opacity','0');
-    },1500);
-   
+    setTimeout(function () {
+        $('.preLoader').css('display', 'none');
+    }, 1500);
+
+    /*Back to top*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    $('#back-to-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+    });
+
+
 });
+
+
+
+
 

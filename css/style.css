@@ -9,6 +9,7 @@
   bottom: 0;
   z-index: 9999;
   display: flex;
+  background-color: #F8F0C8;
   justify-content: center;
   align-items: center;
   opacity: 1;
@@ -16,7 +17,7 @@
 }
 
 /* back to top */
-.back-to-top{
+#back-to-top{
   position: fixed;
   right: 40px;
   bottom: 20px;
@@ -27,9 +28,15 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -ms-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
 }
 
-.back-to-top a > .fas{
+#back-to-top .fas{
   font-size: 30px;
   color: #fff;
 }
